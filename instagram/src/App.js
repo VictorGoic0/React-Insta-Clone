@@ -6,11 +6,25 @@ import PostContainer from './components/PostContainer/PostContainer'
 import dummyData from './dummy-data';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      data: dummyData
+    }
+  }
+
   render() {
     return (
       <div className="App">
         <SearchBar />
-        <PostContainer />
+        <PostContainer
+        username={this.state.data.username}
+        thumbnailUrl={this.state.data.thumbnailUrl}
+        imageUrl={this.state.data.imageUrl}
+        likes={this.state.data.likes}
+        timestamp={this.state.data.timestamp}
+        comments={this.state.data.comments}
+        />
       </div>
     );
   }
