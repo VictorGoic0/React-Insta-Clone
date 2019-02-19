@@ -9,12 +9,15 @@ const Post = props => {
         <h2>{props.data.username}</h2>
       </div>
       <img className="post-img" src={props.data.imageUrl} />
-      <h3>{props.data.likes} likes</h3>
-      <CommentSection comments={props.data.comments} />
-      <form>
-        <input>
-        </input>
-      </form>
+      <div className="post-footer">
+        <h3>{props.data.likes} likes</h3>
+        <CommentSection comments={props.data.comments} />
+        <form>
+          <input
+          placeholder="Add a comment...">
+          </input>
+          </form>
+      </div>
     </div>
   )
 }

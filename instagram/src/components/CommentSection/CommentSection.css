@@ -1,0 +1,8 @@
+.comment {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comment p {
+  margin-left: 4px;
+}
