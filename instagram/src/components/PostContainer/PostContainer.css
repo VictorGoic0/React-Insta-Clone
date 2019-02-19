@@ -1,0 +1,32 @@
+.post-container {
+  width: 604px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.post {
+  height: 924px;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.thumbnail {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.post-header {
+  width: 124px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.post-img {
+  max-width: 603px;
+}
