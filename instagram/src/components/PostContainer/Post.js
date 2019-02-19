@@ -1,7 +1,12 @@
 import React from 'react';
 
 const Post = props => {
-  return <p>Post</p>
+  return (
+    <div>
+      <p>{props.username}</p>
+      <img src={props.imageUrl} />
+    </div>
+  )
 }
 
 export default Post

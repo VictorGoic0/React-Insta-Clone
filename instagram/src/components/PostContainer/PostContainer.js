@@ -6,8 +6,12 @@ import Post from './Post';
 const PostContainer = props => {
   return (
     <div>
-      <Post />
-      <CommentSection comments={props.data.comments} />
+      {props.data.map((input, index) => (
+        <Post key={index} />
+      ))}
+      {props.data.map((input, index) => (
+        <CommentSection key={index} comments={props.data.map(input => input.comments)} />
+      ))}
     </div>
   )
 }

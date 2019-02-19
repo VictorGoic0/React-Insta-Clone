@@ -3,9 +3,7 @@ import './CommentSection.css';
 import Comment from './Comment'
 
 const CommentSection = props => {
-  return (
-    <p>Fuck you</p>
-  )
+  return <Comment />
 }
 
 export default CommentSection;
