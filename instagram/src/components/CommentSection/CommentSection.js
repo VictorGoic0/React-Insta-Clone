@@ -4,13 +4,7 @@ import Comment from './Comment'
 
 const CommentSection = props => {
   return (
-    <div>
-      <Comment comment={props.comments} />
-      <form>
-        <input>
-        </input>
-      </form>
-    </div>
+    <p>Fuck you</p>
   )
 }
 

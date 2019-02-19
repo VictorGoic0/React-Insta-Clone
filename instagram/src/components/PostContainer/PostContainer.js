@@ -1,11 +1,13 @@
 import React from 'react';
 import './PostContainer.css';
 import CommentSection from '../CommentSection/CommentSection';
+import Post from './Post';
 
 const PostContainer = props => {
   return (
     <div>
-      <CommentSection comments={props.comments} />
+      <Post />
+      <CommentSection comments={props.data.comments} />
     </div>
   )
 }

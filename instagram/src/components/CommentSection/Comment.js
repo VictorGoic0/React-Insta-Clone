@@ -2,7 +2,9 @@ import React from 'react';
 
 const Comment = props => {
   return (
-    <p>Comment</p>
+    <div>
+      <p>comment</p>
+    </div>
   )
 }
 export default Comment;

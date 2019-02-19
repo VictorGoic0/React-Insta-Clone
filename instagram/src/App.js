@@ -17,14 +17,7 @@ class App extends Component {
     return (
       <div className="App">
         <SearchBar />
-        <PostContainer
-        username={this.state.data.username}
-        thumbnailUrl={this.state.data.thumbnailUrl}
-        imageUrl={this.state.data.imageUrl}
-        likes={this.state.data.likes}
-        timestamp={this.state.data.timestamp}
-        comments={this.state.data.comments}
-        />
+        <PostContainer data={this.state.data} />
       </div>
     );
   }
