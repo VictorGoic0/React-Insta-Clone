@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   margin-left: 16px;
-  padding: 18px 0;
+  padding: 15px 0;
 }
 
 .post-header h2 {
@@ -47,7 +47,7 @@
 }
 
 .post-footer h3, h4, p, form {
-  padding-top: 14px;
+  padding-top: 12px;
 }
 
 .post form {
@@ -57,4 +57,14 @@
 .post form input {
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  margin-top: 12px;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
