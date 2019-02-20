@@ -1,5 +1,6 @@
 import React from 'react';
-import './CommentSection.css'
+import './CommentSection.css';
+import PropTypes from 'prop-types';
 
 const Comment = props => {
   return (
@@ -9,4 +10,12 @@ const Comment = props => {
     </div>
   )
 }
+
+Comment.propTypes = {
+  info: PropTypes.shape({
+    username: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired
+  })
+}
+
 export default Comment;
