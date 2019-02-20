@@ -1,6 +1,7 @@
 import React from 'react';
 import CommentSection from '../CommentSection/CommentSection';
 import PropTypes from 'prop-types';
+import './PostContainer.css';
 
 const Post = props => {
   return (
@@ -12,14 +13,9 @@ const Post = props => {
       <img className="post-img" src={props.data.imageUrl} alt="post" />
       <div className="post-footer">
         <h3>{props.data.likes} likes</h3>
-        <CommentSection comments={props.data.comments} />
-        <p>{props.data.timestamp}</p>
+        <CommentSection comments={props.data.comments} timestamp={props.data.timestamp}/>
       </div>
-      <form>
-        <input
-        placeholder="Add a comment...">
-        </input>
-      </form>
+
     </div>
   )
 }

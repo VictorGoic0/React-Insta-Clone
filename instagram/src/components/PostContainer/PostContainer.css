@@ -43,12 +43,16 @@
   align-content: flex-start;
 }
 
+.post-footer h3 {
+  width: 100%;
+}
+
 .post-footer h3, h4, p, form {
   padding-top: 14px;
 }
 
 .post form {
-  margin: 0px 0px 20px 16px;
+  margin-bottom: 20px;
 }
 
 .post form input {
