@@ -12,12 +12,13 @@ const Post = props => {
       <div className="post-footer">
         <h3>{props.data.likes} likes</h3>
         <CommentSection comments={props.data.comments} />
-        <form>
-          <input
-          placeholder="Add a comment...">
-          </input>
-          </form>
+        <p>{props.data.timestamp}</p>
       </div>
+      <form>
+        <input
+        placeholder="Add a comment...">
+        </input>
+      </form>
     </div>
   )
 }
