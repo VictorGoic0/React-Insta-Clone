@@ -46,23 +46,27 @@
   width: 100%;
 }
 
-.post-footer h3, h4, p, form {
+.post-footer h3, h4, p {
   padding-top: 12px;
 }
 
 .post form {
   margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .post form input {
   font-size: 1.6rem;
   font-weight: bold;
+  border: none;
+  width: 100%;
 }
 
 .logo {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   margin-top: 12px;
+  margin-right: 12px;
 }
 
 .logo:hover {
