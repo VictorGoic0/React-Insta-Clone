@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const PostContainer = props => {
   return (
     <div className="post-container">
-      {props.data.map((input, index) => <Post data={props.data[index]} key={index} />)}
+      {props.data.map((input, index) => <Post data={props.data[index]} key={props.data[index].timestamp} />)}
     </div>
   )
 }

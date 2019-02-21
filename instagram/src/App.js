@@ -9,10 +9,15 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: dummyData,
+      data: [],
       search: ''
     }
   }
+
+  componentDidMount() {
+    this.setState({ data: dummyData });
+  }
+
 
   handleChanges = e => {
     console.log(this.state)
