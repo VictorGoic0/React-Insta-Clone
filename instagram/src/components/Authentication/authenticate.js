@@ -3,10 +3,24 @@ import React from 'react';
 const authenticate = FirstComponent => SecondComponent => {
   return class extends React.Component {
     constructor() {
-      super()
+      super();
+      this.state = {
+        loggedIn: false
+      }
     }
+
+    componentDidMount() {
+      if (localStorage.getItem('user')) {
+        this.setState({ loggedIn: true })
+      }
+    }
+
     render() {
-      return <FirstComponent />
+      if (this.state.loggedIn) {
+        return <FirstComponent />
+      } else {
+        return <SecondComponent />
+      }
     }
   }
 }
