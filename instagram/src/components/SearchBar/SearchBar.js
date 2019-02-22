@@ -16,6 +16,9 @@ const SearchBar = props => {
         placeholder="Search...">
         </input>
       </form>
+      <div className="searchbarlogos">
+        <img src="/images/searcheart.png" alt="heart" />
+      </div>
     </div>
   )
 }
