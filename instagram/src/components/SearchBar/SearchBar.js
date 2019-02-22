@@ -3,14 +3,20 @@ import './SearchBar.css';
 
 const SearchBar = props => {
   return (
-    <form className="searchbar" onChange={props.performSearch} onSubmit={props.performSearch}>
-      <input
-      type="text"
-      value={props.search}
-      onChange={props.handleChanges}
-      placeholder="Search...">
-      </input>
-    </form>
+    <div className="searchbar">
+      <div className="searchbarimg">
+        <img src="/images/igcameralogo.png" alt="igcamera"/>
+        <img src="/images/iglogo.png" alt="iglogo"/>
+      </div>
+      <form onChange={props.performSearch} onSubmit={props.performSearch}>
+        <input
+        type="text"
+        value={props.search}
+        onChange={props.handleChanges}
+        placeholder="Search...">
+        </input>
+      </form>
+    </div>
   )
 }
 

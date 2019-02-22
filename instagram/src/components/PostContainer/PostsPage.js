@@ -28,7 +28,7 @@ class PostsPage extends React.Component {
   performSearch = e => {
     e.preventDefault();
 
-    const filteredData = this.state.data.filter(input => input.username.includes(this.state.search))
+    const filteredData = this.state.data.filter(input => input.username.toLowerCase().includes(this.state.search.toLowerCase()))
 
     this.setState({
       data: filteredData
