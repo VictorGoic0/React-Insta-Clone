@@ -11,9 +11,7 @@ class Login extends React.Component {
   }
 
   signIn = e => {
-    e.preventDefault();
     localStorage.setItem(this.state.userText, this.state.passText);
-    window.location.reload();
   }
 
   handleChanges = e => {
@@ -26,13 +24,13 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className="Login">
+      <div className="login">
         <h2>Login</h2>
-        <h3>Username: </h3>
         <form onSubmit={this.signIn}>
+          <h3>Username: </h3>
           <input type="text" value={this.state.userText} name="userText" onChange={this.handleChanges}>
           </input>
-        <h3>Password: </h3>
+          <h3>Password: </h3>
           <input type="text" value={this.state.passText} name="passText" onChange={this.handleChanges}>
           </input>
           <button>Sign In</button>

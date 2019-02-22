@@ -33,6 +33,12 @@ class PostsPage extends React.Component {
     this.setState({
       data: filteredData
     })
+
+    if (this.state.search === '') {
+      this.setState({
+        data: dummyData
+      })
+    }
   }
 
   render() {

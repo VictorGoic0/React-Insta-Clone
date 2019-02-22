@@ -3,7 +3,7 @@ import './SearchBar.css';
 
 const SearchBar = props => {
   return (
-    <form className="searchbar" onSubmit={props.performSearch}>
+    <form className="searchbar" onChange={props.performSearch} onSubmit={props.performSearch}>
       <input
       type="text"
       value={props.search}
