@@ -25,16 +25,15 @@ class Login extends React.Component {
   render() {
     return (
       <div className="login">
-        <h2>Login</h2>
+        <img src="/Images/iglogo.png" alt="Instagram" />
         <form onSubmit={this.signIn}>
-          <h3>Username: </h3>
-          <input type="text" value={this.state.userText} name="userText" onChange={this.handleChanges}>
+          <input type="text" value={this.state.userText} name="userText" onChange={this.handleChanges} placeholder="Username">
           </input>
-          <h3>Password: </h3>
-          <input type="text" value={this.state.passText} name="passText" onChange={this.handleChanges}>
+          <input type="text" value={this.state.passText} name="passText" onChange={this.handleChanges} placeholder="Password">
           </input>
           <button>Sign In</button>
         </form>
+        <h3>Forgot Password?</h3>
       </div>
     )
   }

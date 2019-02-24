@@ -18,11 +18,10 @@ class PostsPage extends React.Component {
   }
 
   handleChanges = e => {
-    console.log(this.state)
-
     this.setState({
       search: e.target.value
     })
+    console.log(this.state)
   }
 
   performSearch = e => {
@@ -30,13 +29,15 @@ class PostsPage extends React.Component {
 
     const filteredData = this.state.data.filter(input => input.username.toLowerCase().includes(this.state.search.toLowerCase()))
 
-    this.setState({
-      data: filteredData
-    })
-
-    if (this.state.search === '') {
+    if (this.state.search.length <= 1) {
       this.setState({
         data: dummyData
+      })
+    }
+
+    else {
+      this.setState({
+        data: filteredData
       })
     }
   }
